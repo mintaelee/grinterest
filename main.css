@@ -7,3 +7,7 @@
     grid-template: 100% / 10% 80% 10%;
 }
 /*this is uli*/
+.content{
+    display:grid;
+    grid-template: repeat(5, 20%) / repeat(5, 20%);
+}
