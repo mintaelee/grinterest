@@ -9,7 +9,7 @@
 /*this is uli*/
 .content{
     display:inline-grid;
-    grid-template: repeat(5, 20%) / repeat(5, 20%);
+    grid-template: repeat(25, 200px) / repeat(1, 200px);
     /* padding: 5px; */
     /* margin: 10px; */
     justify-content: center;
@@ -36,4 +36,28 @@ p img {
 .header p{
     vertical-align: middle;
     font-size: 3em;
+}
+
+@media screen and (min-width: 500px){
+    .content{
+        grid-template: repeat(13, 200px)/ repeat(2, 200px);
+    }
+}
+
+@media screen and (min-width: 700px){
+    .content{
+        grid-template: repeat(9, 200px)/ repeat(3, 200px);
+    }
+}
+
+@media screen and (min-width: 900px){
+    .content{
+        grid-template: repeat(7, 200px)/ repeat(4, 200px);
+    }
+}
+
+@media screen and (min-width: 1100px){
+    .content{
+        grid-template: repeat(5, 200px)/ repeat(5, 200px);
+    }
 }
